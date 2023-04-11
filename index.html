@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dal.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="login.js"></script>
+    </head>
+    <body>
+        <header class="index-header">
+            <nav class="nav index-nav">
+                <ul>
+                    <li> <a class="email" button onclick="send()"> <span><img src="images/icons8-mail-50.png"> </span></a></li>
+
+                    <script>
+                        function send(){
+                            window.location.href='mailto:DaleelTheGuide@gmail.com';
+                            
+                        }
+                    </script>
+
+                    <input type="checkbox" id="show">
+                    <li><label for="show" class="show-btn"><img class="adminn" src="images/icons8-system-administrator-female-48.png"></label></li>
+                        <div class="container">
+                            <img src="images/icons8-male-user-96.png">
+                            <label for="show" class="close-btn" title="close">&times;</label>
+                            <h3>تسجيل الدخول</h3>
+                            <input type="password" placeholder="ادخل كلمة السر" id="password">
+                            <br>
+                            <button onclick="validate()"><span>دخول</span></button>
+                        </div>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="header2">
+        <br>
+        <br>
+        <br>
+            <h1 class="daleel" ><img src="images/output-onlinejpgtools.png"></h1>
+            <h2 class="search">
+                <input type="text" placeholder= "البحث عن الاسم او رقم المكتب">
+                <br>
+                <br>
+                <form action="search.html">
+                    <button><span>بحث</span></button>
+                </form>
+            </h2>
+        </section>
+        <footer>
+            <section class="bottom">
+                <p>   الخدمات المقترحة</p>
+                <div class="options">
+                    <ul>
+                        <li><img class="img1" src="images/Component 1.png"></li>
+                        <li><img class="img2" src="images/Component 2.png"></li>
+                        <li><img class="img3" src="images/Component 3.png"></li>
+                        <li><img class="img4" src="images/Component 4.png"></li>
+                        <li><img class="img5" src="images/Component 5.png"></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

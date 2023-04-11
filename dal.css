@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 150vh;
+    width: auto;
+    background-image: linear-gradient(rgba(221, 209, 239, 0.458), rgba(221, 209, 239, 0.458)), url(images/Daleel7.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+}
+.nav ul{
+    margin: 0;
+}
+.nav li{
+    display: inline;
+}
+.header3{
+    display: inline-block;
+    padding: .5em;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+}
+.index-nav{
+    text-align: center;
+}
+.email{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.daleel{
+    text-align: center;
+}
+.logout{
+    position: absolute;
+    padding: .5em;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+.email:hover{
+    background-color:rgba(221, 221, 221, 0.508);
+    border-radius: 20px;
+}
+.logout:hover{
+    background-color:rgba(221, 221, 221, 0.508);
+    border-radius: 20px;
+}
+.search{
+    text-align: center;
+}
+.options li{
+    display: inline-table;
+    margin: 0 auto;
+    text-align: center;
+}
+.options li img{
+    height: 260px;
+    width: 260px;
+    padding: 0.5em;
+}
+.options img:hover{
+    height: 270px;
+    width: 270px;
+}
+.bottom p{
+    color: #f3f2f8;
+    font-size: 2em;
+    text-align: right;
+    padding-right: .3em;
+    border-bottom: 1.5px solid #e8e2fec4;
+    padding-bottom: .3em;
+    margin: 0;
+}
+.bottom .options{
+    max-width: 1438px;
+    text-align: center;
+}
+.admin-header{
+    margin-bottom: 16px;
+}
+.bottom2 .options2{
+    max-width: 1438px;
+    text-align: center;
+}
+.options2 li{
+    display: inline-block;
+    margin: 0 auto;
+}
+.options2 li img{
+    height: 260px;
+    width: 260px;
+    padding: 1em;
+}
+.bottom2 p{
+    color: #f3f2f8;
+    font-size: 2em;
+    text-align: right;
+    padding-right: .3em;
+    padding-bottom: .3em;
+    border-bottom: 1.5px solid #e8e2fec4;
+    margin: 0;
+}
+.options2 li img:hover{
+    height: 270px;
+    width: 270px;
+}
+
+.search input{
+    color: black;
+    border: 1px solid #272434;
+    size-adjust: 5em;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: right;
+}
+.search button{
+    color: #c5bce9;
+    background-color: #343045;
+    border: 1px solid #141121;
+    font-size: 0.70em;
+    width: 100px;
+    height: 30px;
+}
+.show-btn{
+    position: absolute;
+    padding: .5em;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+.show-btn:hover{
+    background-color:rgba(221, 221, 221, 0.508);
+    border-radius: 20px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#show:checked ~ .container{
+    display: block;
+}
+.container{
+    display: none;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #433e59;
+    border: 1px solid rgb(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.57);
+}
+.container img{
+    width: 80px;
+    position: relative;
+    height: 80px;
+    margin-top: 50px;
+}
+.container{
+    position: absolute;
+    top: 22%;
+    left: 89%;
+    transform: translate(-50%, -50%);
+}
+.container .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #c5bce9;
+}
+.close-btn:hover{
+    color: #26242e;
+}
+h3{
+    text-align: center;
+    color: #d7d3e8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+form{
+    margin: 20px;
+}
+input{
+    color: black;
+    width: 160px;
+    height: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+button{
+    color: #c5bce9;
+    background-color: #272434;
+    border: 1px solid #141121;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 0.5em;
+    transition: 0.2s;
+    border-radius: 5px;
+    text-underline-offset: unset;
+    cursor: pointer;
+}
+button span{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transform: 0.5s;
+}
+button:hover span{
+    padding-right: 25px;
+}
+button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+.infobox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.infobox .info{
+    width: 800px;
+    position: relative;
+    height: 900px;
+    background: #433e59;
+    margin: 30px 10px;
+    padding: 20px 15px;
+}
+.infobox .info{
+    text-align: right;
+    font-size: 2em;
+    padding: 2%;
+}
+.daleel2{
+    text-align: center;
+}
+.goadmin{
+    position: absolute;
+    padding: .3em;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+.goadmin:hover{
+    background-color:rgba(221, 221, 221, 0.508);
+    border-radius: 20px;
+}
+.goindex{
+    position: absolute;
+    padding: .3em;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+.goindex:hover{
+    background-color:rgba(221, 221, 221, 0.508);
+    border-radius: 20px;
+}
+.buttons{
+    text-align: left;
+    cursor: pointer;
+}
+.close1{
+    float: right;
+}
+.trash{
+    float: left;
+}
+.fot{
+    text-align: center;
+    align-items: center;
+}
+.done{
+    text-align: center;
+}
